@@ -4,7 +4,8 @@
   "description": "Performs global/local layout of clusters on YouTube graph",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/*.js",
+    "start": "browserify demo/index.js > demo/bundle.js"
   },
   "keywords": [
     "experiment"
@@ -14,5 +15,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/anvaka/yt.cluster.layout"
+  },
+  "devDependencies": {
+    "miserables": "^1.0.0",
+    "ngraph.cw": "^2.0.0",
+    "ngraph.generators": "0.0.16",
+    "ngraph.pixel": "^2.1.0",
+    "pixel.static": "^2.1.1",
+    "tap": "^5.7.0"
+  },
+  "dependencies": {
+    "ngraph.forcelayout": "0.0.23",
+    "ngraph.merge": "0.0.1",
+    "ngraph.view": "^1.0.1"
   }
 }
